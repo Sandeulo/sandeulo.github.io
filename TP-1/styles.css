@@ -133,3 +133,48 @@ body {
 .barrer {
   text-decoration: line-through;
 }
+
+.recette-1 {
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  background-color: #818994;
+  margin: 24px auto;
+  padding: 30px;
+  width: 250px;
+  font-size: 20px;
+  justify-content: center;
+  text-shadow: 0px 0px 3px black;
+  color: white;
+}
+
+.recette-2 {
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  background-color: #818994;
+  margin: 24px auto;
+  padding: 30px;
+  width: 250px;
+  font-size: 20px;
+  justify-content: center;
+  text-shadow: 0px 0px 3px black;
+  color: white;
+}
+
+.recette-3 {
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  background-color: #818994;
+  margin: 24px auto;
+  padding: 30px;
+  width: 250px;
+  font-size: 20px;
+  justify-content: center;
+  text-shadow: 0px 0px 3px black;
+  color: white;
+}
