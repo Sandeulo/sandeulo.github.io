@@ -129,3 +129,7 @@ body {
 .recette-title {
   font-size: 32px;
 }
+
+.barrer {
+  text-decoration: line-through;
+}
