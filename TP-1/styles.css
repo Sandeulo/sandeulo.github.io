@@ -197,3 +197,11 @@ body {
 body {
   background-color: rgb(192, 191, 190);
 }
+
+.titre-recette {
+  margin: 24px auto;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 3px black;
+  font-size: 46px;
+}
