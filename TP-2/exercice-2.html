@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="exercice-2.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div>
+      <h1>Compteur</h1>
+      <h2 id="value">0</h2>
+      <div>
+        <button id="plus">+1</button>
+        <button id="minus">-1</button>
+      </div>
+      <div>
+        <button id="reset">reset</button>
+      </div>
+    </div>
+    <script>
+      document
+        .querySelector("#plus")
+        .addEventListener("click", function (evenement) {
+          const valueElement = document.querySelector("#value");
+          const value = parseInt(valueElement.innerHTML);
+          valueElement.innerHTML = value + 1;
+        });
+
+      document
+        .querySelector("#minus")
+        .addEventListener("click", function (evenement) {
+          const valueElement = document.querySelector("#value");
+          const value = parseInt(valueElement.innerHTML);
+          valueElement.innerHTML = value - 1;
+        });
+
+      document
+        .querySelector("#reset")
+        .addEventListener("click", function (evenement) {
+          const valueElement = document.querySelector("#value");
+          valueElement.innerHTML = 0;
+        });
+    </script>
+  </body>
+</html>

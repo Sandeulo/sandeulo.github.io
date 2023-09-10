@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="coucou">Coucou</div>
+    <div id="delete">A supprimer</div>
+
+    <script>
+      // Commentaire
+      /**
+       * Ligne 1
+       * Ligne 2
+       */
+
+      // Variables
+      const anneeNaissance = 1997;
+      let prenom = "Jason";
+      let prenom2 = "Jason";
+      let prenom3 = `Jason né en ${anneeNaissance}`; // Jason né en 1997
+
+      // window.alert("Coucou Sandro"); // .alert = afficher popup
+      // window.location.href // lire href
+      // window.location.href = 'https://google.com'; // assigner href (modifier l'url du site)
+
+      // Conditions
+      const age = 18;
+      if (age >= 18) {
+        // si
+        console.log("Tu peux boire de l'alcool frero");
+      } else if (age === 0) {
+        // sinon si
+        console.log("Tu viens d'arriver sur Terre et tu veux deja sombrer ?");
+      } else {
+        // sinon (tous les autres cas)
+        console.log("DEGAGE");
+      }
+
+      // Manipulation du DOM
+      // document.querySelector("#delete").remove();
+      // document.querySelector(".coucou").style.color = 'red';
+
+      // Events
+      document
+        .querySelector(".coucou")
+        .addEventListener("click", function (evenement) {
+          const target = evenement.target;
+          target.remove();
+        });
+    </script>
+  </body>
+</html>
