@@ -1,45 +1,63 @@
 <!DOCTYPE html>
+<!-- Déclaration du type de document HTML -->
 <html lang="en">
+  <!-- Début de la balise <html> avec l'attribut lang pour spécifier la langue -->
+
   <head>
     <meta charset="UTF-8" />
+    <!-- Déclaration de l'encodage du texte en UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Configuration de la vue sur les appareils mobiles -->
     <title>Document</title>
+    <!-- Titre de la page affiché dans l'onglet du navigateur -->
     <link href="exercice-2.css" rel="stylesheet" />
+    <!-- Lien vers une feuille de style externe -->
   </head>
+
   <body>
     <div>
       <h1>Compteur</h1>
+      <!-- Titre principal de la page -->
       <h2 id="value">0</h2>
+      <!-- Élément de titre h2 avec l'ID "value" pour afficher la valeur du compteur -->
       <div>
         <button id="plus">+1</button>
+        <!-- Bouton pour incrémenter le compteur de 1 -->
         <button id="minus">-1</button>
+        <!-- Bouton pour décrémenter le compteur de 1 -->
       </div>
       <div>
         <button id="reset">reset</button>
+        <!-- Bouton pour réinitialiser le compteur à 0 -->
       </div>
     </div>
     <script>
+      // Script JavaScript pour gérer les événements des boutons
+
+      // Lorsque le bouton avec l'ID "plus" est cliqué
       document
         .querySelector("#plus")
         .addEventListener("click", function (evenement) {
-          const valueElement = document.querySelector("#value");
-          const value = parseInt(valueElement.innerHTML);
-          valueElement.innerHTML = value + 1;
+          const valueElement = document.querySelector("#value"); // Sélectionne l'élément avec l'ID "value"
+          const value = parseInt(valueElement.innerHTML); // Récupère la valeur actuelle du compteur
+          valueElement.innerHTML = value + 1; // Incrémente la valeur du compteur et l'affiche
         });
 
+      // Lorsque le bouton avec l'ID "minus" est cliqué
       document
         .querySelector("#minus")
         .addEventListener("click", function (evenement) {
-          const valueElement = document.querySelector("#value");
-          const value = parseInt(valueElement.innerHTML);
-          valueElement.innerHTML = value - 1;
+          const valueElement = document.querySelector("#value"); // Sélectionne l'élément avec l'ID "value"
+          const value = parseInt(valueElement.innerHTML); // Récupère la valeur actuelle du compteur
+          valueElement.innerHTML = value - 1; // Décrémente la valeur du compteur et l'affiche
         });
 
+      // Lorsque le bouton avec l'ID "reset" est cliqué
       document
         .querySelector("#reset")
         .addEventListener("click", function (evenement) {
-          const valueElement = document.querySelector("#value");
-          valueElement.innerHTML = 0;
+          const valueElement = document.querySelector("#value"); // Sélectionne l'élément avec l'ID "value"
+          valueElement.innerHTML = 0; // Réinitialise la valeur du compteur à 0
         });
     </script>
   </body>

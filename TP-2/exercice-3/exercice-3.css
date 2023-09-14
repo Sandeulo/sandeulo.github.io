@@ -1,0 +1,59 @@
+/* Importation d'une police Google Fonts appelée "Bebas Neue" */
+@import url("https://fonts.googleapis.com/css?family=Bebas%20Neue");
+
+/* Styles pour le corps (body) de la page */
+body {
+  font-family: "Bebas Neue"; /* Utilisation de la police "Bebas Neue" pour le texte du corps */
+  text-align: center; /* Centre le texte horizontalement */
+  margin: 0; /* Supprime les marges par défaut du corps */
+  padding: 0; /* Supprime le padding par défaut du corps */
+}
+
+/* Styles pour les titres de niveau 1 (h1) */
+h1 {
+  background-color: #3498db; /* Fond bleu pour le titre h1 */
+  color: white; /* Texte blanc pour le titre h1 */
+  padding: 20px; /* Espace de remplissage autour du titre h1 */
+}
+
+/* Styles pour la classe .task-container */
+.task-container {
+  margin-top: 20px; /* Marge supérieure de 20 pixels pour le conteneur de tâches */
+}
+
+/* Styles pour les champs de texte de type "text" */
+input[type="text"] {
+  width: 70%; /* Largeur du champ de texte à 70% de la largeur de son conteneur */
+  padding: 10px; /* Espace de remplissage autour du champ de texte */
+  font-size: 16px; /* Taille de police de 16 pixels pour le champ de texte */
+}
+
+/* Styles pour les boutons */
+button {
+  padding: 10px 20px; /* Espace de remplissage autour du bouton (10 pixels en haut/bas, 20 pixels à gauche/droite) */
+  font-size: 16px; /* Taille de police de 16 pixels pour les boutons */
+}
+
+/* Styles pour les listes non ordonnées (ul) */
+ul {
+  list-style-type: none; /* Supprime les puces par défaut des listes */
+  padding: 0; /* Supprime le padding par défaut des listes */
+}
+
+/* Styles pour les éléments de liste (li) */
+li {
+  display: flex; /* Utilise la mise en page flexible pour les éléments de liste */
+  align-items: center; /* Centre verticalement les éléments de liste */
+  justify-content: space-between; /* Répartit l'espace disponible horizontalement */
+  border-bottom: 1px solid #ddd; /* Bordure inférieure de 1 pixel solide en gris clair */
+  padding: 10px; /* Espace de remplissage autour des éléments de liste */
+}
+
+/* Styles pour les boutons de suppression avec la classe .delete-button */
+.delete-button {
+  background-color: #e74c3c; /* Fond rouge pour les boutons de suppression */
+  color: white; /* Texte blanc pour les boutons de suppression */
+  padding: 5px 10px; /* Espace de remplissage autour des boutons de suppression */
+  border: none; /* Supprime la bordure des boutons de suppression */
+  cursor: pointer; /* Change le curseur en une main pointant pour indiquer qu'il est cliquable */
+}
