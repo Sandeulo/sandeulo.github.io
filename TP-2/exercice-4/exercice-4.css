@@ -28,15 +28,15 @@ h1 {
 }
 
 .color1 {
-  background-color: rgb(185, 10, 10);
+  background-color: rgb(255, 0, 0);
 }
 
 .color2 {
-  background-color: rgb(22, 165, 22);
+  background-color: rgb(0, 255, 0);
 }
 
 .color3 {
-  background-color: rgb(36, 36, 153);
+  background-color: rgb(0, 0, 255);
 }
 
 body {
